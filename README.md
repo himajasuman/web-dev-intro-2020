@@ -7,21 +7,16 @@ Download and install [node.js](https://nodejs.org/en/). Check if you have instal
 npm is also required, it is distributed with node.js, after insatlling node.js make sure npm is also installed by checking npm v 
 `npm -v`
 
-install [create-react-app](https://www.npmjs.com/package/create-react-app) package, by typing `npm i create-react-app`.
+This project is created using https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-default/
 
-install [npx](https://www.npmjs.com/package/npx), by typing `npm i npx`.
+Install gatsby
+`npm i gatsby -g`
 
+To create app from scratch 
+`gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default`
 
-### create app
-
-create app using `npx create-react-app web-dev-intro-2020`.
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Run it on you machine 
+```
+cd my-default-starter/
+gatsby develop
+```
