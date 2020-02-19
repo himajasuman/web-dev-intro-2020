@@ -14,7 +14,7 @@ install [npx](https://www.npmjs.com/package/npx), by typing `npm i npx`.
 
 ### create app
 
-create app using `npx create-react-app meme-generator`.
+create app using `npx create-react-app web-dev-intro-2020`.
 
 In the project directory, you can run:
 
