@@ -1,0 +1,27 @@
+.header {
+    background: rgb(142, 0, 0);
+    color: white;
+    margin-bottom: 24px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0px;
+}
+
+.my-favs {
+    cursor: pointer;
+}

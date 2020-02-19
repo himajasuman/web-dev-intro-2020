@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "gatsby": "^2.15.29",
     "gatsby-image": "^2.2.24",
     "gatsby-plugin-manifest": "^2.2.20",
@@ -14,6 +15,7 @@
     "gatsby-source-filesystem": "^2.1.29",
     "gatsby-transformer-sharp": "^2.2.20",
     "prop-types": "^15.7.2",
+    "query-string": "^6.8.3",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1"

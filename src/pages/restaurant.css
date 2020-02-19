@@ -1,0 +1,40 @@
+.restraunt .restraunt-header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.restraunt .restraunt-header img {
+    border-radius: 4px;
+    max-width: 200px;
+    margin-right: 16px;
+}
+
+.restraunt .restraunt-header .ratings {
+    padding: 4px 8px;
+    background: green;
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.restraunt .images {
+    background-color: #f3f3f2;
+    padding: 24px;
+}
+
+.restraunt .images img {
+    max-width: 120px;
+    margin: 8px;
+}
+
+.loading {
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+}
+
+
+.loading img {
+    width: 150px;
+}
