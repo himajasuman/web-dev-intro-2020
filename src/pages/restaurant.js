@@ -1,3 +1,4 @@
+import fetch from 'node-fetch';
 import React from "react";
 import { Link } from "gatsby";
 import queryString from 'query-string';
@@ -12,6 +13,7 @@ class RestaurantPage extends React.Component {
   }
 
   componentWillMount() {
+    debugger;
     const res_id = queryString.parse(this.props.location.search).id;
 
     fetch(`https://developers.zomato.com/api/v2.1/restaurant?res_id=${res_id}`,  {

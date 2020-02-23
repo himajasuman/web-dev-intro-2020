@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import Layout from "../components/layout";
 import './index.css';
 import restaurantsData from '../data/restaurants';
+import fetch from 'node-fetch';
 
 const RestrauntList = ({ restaurants, onClickHandler, favs }) => {
   return (
@@ -85,26 +86,26 @@ class IndexPage extends React.Component {
   }
 
   getRestaurants(lat, lon) {
-    // const searchApi = `https://developers.zomato.com/api/v2.1/search?lat=${lat}&lon=${lon}&entity_type=landmark&radius=100`;
-    // console.log(searchApi);
-    // try {
-    //   fetch(searchApi, {
-    //     method: 'GET',
-    //     headers: {
-    //       'accept': 'application/json',
-    //       'user-key': '919a6002f8818a307f814ca1402a9ff2'
-    //     }
-    //   })
-    //   .then(res => res.json())
-    //   .then(data =>{
-    //     console.log(data.restaurants)
-    //     this.setState({
-    //       restaurants: data.restaurants
-    //     });
-    //   })
-    // } catch(e) {
-    //   console.log(`Error getting restaurants: ${e}`);
-    // }
+    const searchApi = `https://developers.zomato.com/api/v2.1/search?lat=${lat}&lon=${lon}&entity_type=landmark&radius=100`;
+    console.log(searchApi);
+    try {
+      fetch(searchApi, {
+        method: 'GET',
+        headers: {
+          'accept': 'application/json',
+          'user-key': '919a6002f8818a307f814ca1402a9ff2'
+        }
+      })
+      .then(res => res.json())
+      .then(data =>{
+        console.log(data.restaurants)
+        this.setState({
+          restaurants: data.restaurants
+        });
+      })
+    } catch(e) {
+      console.log(`Error getting restaurants: ${e}`);
+    }
     
   }
 
